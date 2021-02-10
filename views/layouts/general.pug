@@ -9,9 +9,11 @@ html
                 #navbarTogglerDemo01.collapse.navbar-collapse
                     ul.navbar-nav.mr-auto.mt-2.mt-lg-0
                         li.nav-item.active
-                            a.nav-link(href='/users')
+                            a.nav-link(href='/')
                                 | Home
                                 span.sr-only (current)
+                        li.nav-item
+                            a.nav-link(href='/users/create') Users
                         li.nav-item
                             a.nav-link(href='/users/create') Create User
         block content

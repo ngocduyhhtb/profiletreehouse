@@ -4,7 +4,7 @@ const app = express();
 const port = 8080;
 //Routes require
 const userRoute = require('./routes/user')
-
+const homeRoute = require('./routes/home')
 //Application setting
 app.set('views', './views');
 app.set('view engine', 'pug');
@@ -17,9 +17,7 @@ app.use(express.static('assets'));
 
 //Application routes
 app.use('/users', userRoute);
-app.get('/', function (req, res) {
-    res.send("<h2>This is my first app</h2>");
-})
+app.use('/', homeRoute);
 
 //Application port server
 app.listen(process.env.PORT || 3000);
