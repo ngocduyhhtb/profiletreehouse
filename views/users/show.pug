@@ -1,0 +1,21 @@
+extends ../layouts/general
+block content
+    .container-fluid.my-5
+        .row
+            .col-8.offset-2
+                .card
+                    .card-header.bg-primary.text-white.text-uppercase User Info
+                    .card-body.text-center
+                        table.text-center.table.table-bordered
+                            thead
+                                tr.bg-info.text-white
+                                    td  ID
+                                    th  Name
+                                    th  Email
+                                    th  Age
+                            tbody
+                                tr
+                                    td=  user.id
+                                    td=  user.name
+                                    td=  user.email
+                                    td=  user.age

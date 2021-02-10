@@ -1,0 +1,26 @@
+extends ../layouts/general
+block content
+    .container-fluid.my-5
+        .row
+            .col-8.offset-2
+                .card
+                    .card-header.bg-primary.text-white.text-uppercase Create User
+                    .card-body
+                        form.create-form(action="/users/create" method="POST")
+                            .container
+                                h2 Creating
+                                .row
+                                    .col-4
+                                        .form-group
+                                            label(for='name') Name
+                                            input#name.form-control(type="text", placeholder="Your name", name="name")
+                                    .col-4
+                                        .form-group
+                                            label(for='email') Email
+                                            input#email.form-control(type="text", placeholder="Your email", name="email")
+                                    .col-4
+                                        .form-group
+                                            label(for='age') Age
+                                            input#age.form-control(type="text", placeholder="Your age", name="age")
+                                    .col-12
+                                        button.btn.btn-primary.w-100(type="submit") Create
