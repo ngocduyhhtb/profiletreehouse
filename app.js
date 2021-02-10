@@ -22,6 +22,4 @@ app.get('/', function (req, res) {
 })
 
 //Application port server
-app.listen(port, () => {
-    console.log(`Server is running at ${port}`)
-});
+app.listen(process.env.PORT || 3000);
