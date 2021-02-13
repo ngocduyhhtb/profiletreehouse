@@ -9,7 +9,6 @@ module.exports = {
     },
     post_search: (req, res) => {
         const user_name = req.body.username;
-        const profile = [];
         Profile(user_name)
             .then(data => {
                 res.render("treehouse/profile", {
