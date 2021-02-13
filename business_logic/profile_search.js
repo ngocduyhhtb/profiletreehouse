@@ -11,7 +11,9 @@ Profile = (user_name) => {
     return fetch(`https://teamtreehouse.com/${user_name}.json`)
         .then(CheckStatus)
         .then(res => res.json())
-        .catch(error => console.error(error.message));
-};
+        .catch(error => {
+            throw error
+        });
+}
 
 module.exports = Profile;

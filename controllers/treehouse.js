@@ -12,7 +12,6 @@ module.exports = {
         const profile = [];
         Profile(user_name)
             .then(data => {
-                console.log(profile);
                 res.render("treehouse/profile", {
                     avatar: data.gravatar_url,
                     username: user_name,
