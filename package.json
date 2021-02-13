@@ -11,7 +11,7 @@
     "example",
     "heroku"
   ],
-  "author": "",
+  "author": "nDuy",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
