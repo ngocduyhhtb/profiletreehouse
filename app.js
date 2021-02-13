@@ -1,7 +1,7 @@
 //Application require
 const express = require('express')
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 //Routes require
 const userRoute = require('./routes/user');
 const homeRoute = require('./routes/home');
@@ -21,4 +21,4 @@ app.use('/', homeRoute);
 app.use('/users', userRoute);
 app.use('/treehouse', treeHouseRouter);
 //Application port server
-app.listen(process.env.PORT || 3000);
+app.listen(port);
