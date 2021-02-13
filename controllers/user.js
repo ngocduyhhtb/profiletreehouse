@@ -1,7 +1,7 @@
 const users = new Set([
-    {id: 1, name: "User1", email: "user1@gmail.com", age: 31, avatar: 'images/users/user1.png'},
-    {id: 2, name: "User2", email: "user2@gmail.com", age: 20, avatar: 'images/users/user2.png'},
-    {id: 3, name: "User3", email: "user3@gmail.com", age: 25, avatar: 'images/users/user3.png'}
+    {id: 1, name: "User1", email: "user1@gmail.com", age: 31},
+    {id: 2, name: "User2", email: "user2@gmail.com", age: 20},
+    {id: 3, name: "User3", email: "user3@gmail.com", age: 25}
 ]);
 module.exports = {
     index: (req, res) => {
